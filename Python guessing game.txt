@@ -1,0 +1,24 @@
+#GUESSING GAME
+# ask the computer to generate random number from 1 to 100 
+#and ask the user to guess the number if they guess it right then it shows you won
+#it helps in guessing by saying low valuue and high value compared to the actual generated number
+
+
+import random
+true_num = random.randint (1,100)
+guess_num = int(input(" enter a number b/n 1 to 100"))
+guess_num
+while True:
+    if guess_num == true_num:
+        print(" CONGRATULATIONS YOU WON")
+        break
+        
+    elif guess_num < true_num:
+        print("TRY WITH THE HIGHER NUMBER")
+        guess_num = int(input(" enter a number b/n 1 to 100"))
+        
+    elif guess_num > true_num:
+        print("TRY WITH THE LOWER NUMBER")
+        guess_num = int(input(" enter a number b/n 1 to 100"))
+        
+        
